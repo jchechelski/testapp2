@@ -1,0 +1,27 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "WSEI-APP2"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "WSEI-APP2"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "WSEI-APP2"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "WSEI-APP2"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "WSEI-APP2"
+        }
+    },
+    "dependent_plugins": {}
+}
