@@ -22,14 +22,17 @@ function onDeviceReady() {
     
     var xhr = new XMLHttpRequest();
     
-    var url = 'http://zeenek.webd.pl/aftership2/xhr.php';
+    //var url = 'http://zeenek.webd.pl/aftership2/xhr.php';
+        var url = 'https://api.aftership.com/v4/trackings/';
     
     var t_number = document.getElementById('tracking_number').value;
     
     var data = 'track_number='+t_number;
     
     xhr.open('POST', url, true);
-    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    //xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.setRequestHeader('aftership-api-key', '07183679-df7c-4c64-b7d5-4cef43e0deca');
     
     xhr.onreadystatechange = function() {
         if(xhr.readyState == 4 && xhr.status == 200) {
@@ -37,7 +40,8 @@ function onDeviceReady() {
         }
     }
     
-    xhr.send(data);
+    //xhr.send(data);
+        xhr.send("tracking_number=8912133414");
     document.getElementById("status").innerHTML = 'processing...';
     
     
